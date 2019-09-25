@@ -1,5 +1,14 @@
 
+    
 spring:
+    #暂时不生效,只能使用注解 
+    #jackson: 
+        #serialization: 
+            #write-date-timestamps-as-nanoseconds: false
+        #date-format: yyyy-MM-dd HH:mm:ss
+        #time-zone: GMT+8
+        
+         
     redis: 
         database: 0
         #redis机器ip
