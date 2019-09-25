@@ -1,0 +1,35 @@
+
+spring:
+    redis: 
+        database: 0
+        #redis机器ip
+        host: 10.1.14.119
+        #redis端口
+        port: 6379
+        #redis 经试验密码一定要加,否自报错!
+        password: 123
+        #redis超时时间（毫秒），如果不设置，取默认值2000
+        timeout: 10000ms
+        #集群环境打开下面注释，单机不需要打开
+        #cluster: 
+        #集群信息
+          #nodes: xxx.xxx.xxx.xxx:xxxx,xxx.xxx.xxx.xxx:xxxx,xxx.xxx.xxx.xxx:xxxx
+        #默认值是5 一般当此值设置过大时，容易报：Too many Cluster redirections
+          #maxRedirects: 3
+        lettuce: 
+          pool: 
+            max-active: 10
+            max-wait: 
+            max-idle: 5
+        #jedis: 
+          #pool:
+            #最大空闲数
+            #max-idle: 3
+            #最少空闲数
+            #min-idle: 0
+            #连接池的最大数据库连接数
+            #max-active: 10
+            #最大建立连接等待时间。如果超过此时间将接到异常。设为-1表示无限制。
+            #max-wait: 
+            
+      
